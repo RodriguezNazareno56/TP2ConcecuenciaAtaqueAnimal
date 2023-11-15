@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.ConcecuenciaDeCasilleros.FieraSalvaje;
+import org.example.ConcecuenciaDeCasilleros.Fieras.Animal;
 import org.example.Equipamiento.Equipamiento;
 
 public class Gladiador {
@@ -8,12 +8,12 @@ public class Gladiador {
     private Equipamiento equipo;
     private int salud = 20;
 
-    public void recibirAtaque(FieraSalvaje fieraSalvaje) {
-        this.defenderse(fieraSalvaje);
+    public void recibirAtaque(Animal animal) {
+        this.defenderse(animal);
     }
 
-    private void defenderse(FieraSalvaje fieraSalvaje) {
-        int danioRecibido = equipo.repelerAtaqueDeFiera(fieraSalvaje);
+    private void defenderse(Animal animal) {
+        int danioRecibido = equipo.repelerAtaque(animal);
         salud = salud - danioRecibido;
     }
 

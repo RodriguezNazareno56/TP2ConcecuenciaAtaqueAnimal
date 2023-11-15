@@ -1,7 +1,7 @@
 package org.example.Equipamiento;
 
-import org.example.ConcecuenciaDeCasilleros.FieraSalvaje;
+import org.example.ConcecuenciaDeCasilleros.Fieras.Animal;
 
 public interface Equipamiento {
-    int repelerAtaqueDeFiera(FieraSalvaje fieraSalvaje);
+    int repelerAtaque(Animal animal);
 }

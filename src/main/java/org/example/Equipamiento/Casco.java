@@ -1,10 +1,11 @@
 package org.example.Equipamiento;
 
-import org.example.ConcecuenciaDeCasilleros.FieraSalvaje;
+import org.example.ConcecuenciaDeCasilleros.Fieras.Animal;
 
 public class Casco implements Equipamiento{
+
     @Override
-    public int repelerAtaqueDeFiera(FieraSalvaje fieraSalvaje) {
-        return 15;
+    public int repelerAtaque(Animal animal) {
+        return animal.atacarATravesDeEquipamiento(this);
     }
 }
