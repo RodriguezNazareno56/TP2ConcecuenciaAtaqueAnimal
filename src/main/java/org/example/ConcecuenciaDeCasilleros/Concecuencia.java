@@ -1,4 +1,6 @@
-package org.example;
+package org.example.ConcecuenciaDeCasilleros;
+
+import org.example.Gladiador;
 
 public interface Concecuencia {
 

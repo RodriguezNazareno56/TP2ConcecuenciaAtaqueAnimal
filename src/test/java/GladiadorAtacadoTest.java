@@ -1,4 +1,8 @@
 import org.example.*;
+import org.example.ConcecuenciaDeCasilleros.Concecuencia;
+import org.example.ConcecuenciaDeCasilleros.FieraSalvaje;
+import org.example.Equipamiento.Armadura;
+import org.example.Equipamiento.Casco;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

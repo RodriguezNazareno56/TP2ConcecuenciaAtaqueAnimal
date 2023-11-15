@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.ConcecuenciaDeCasilleros.FieraSalvaje;
+import org.example.Equipamiento.Equipamiento;
+
 public class Gladiador {
 
     private Equipamiento equipo;

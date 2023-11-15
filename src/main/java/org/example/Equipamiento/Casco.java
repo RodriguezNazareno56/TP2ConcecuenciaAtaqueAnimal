@@ -1,4 +1,6 @@
-package org.example;
+package org.example.Equipamiento;
+
+import org.example.ConcecuenciaDeCasilleros.FieraSalvaje;
 
 public class Casco implements Equipamiento{
     @Override
