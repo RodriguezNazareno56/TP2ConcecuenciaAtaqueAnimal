@@ -45,7 +45,7 @@ public class GladiadorAtacadoTest {
     }
 
     @Test
-    public void FieraSalvajeAtacaGladiadorConArmadura() {
+    public void FieraSalvajeAtacaGladiadorThaexConArmadura() {
 
         Gladiador espartaco = new Thraex();
         espartaco.setEquipamiento(new Armadura());
@@ -62,7 +62,7 @@ public class GladiadorAtacadoTest {
     // Añadir un Tiburon que causa 10 si tiene casco, 5 a armadura, 2 a escudoYEspada, es sencillo solo hay que crear
     // el tiburon y que extienda de Animal y afectable, setear cuanto causa frente a cada equipamiento
     @Test
-    public void TiburonAtacaGladiadorConArmadura() {
+    public void TiburonAtacaGladiadorThaexConArmadura() {
         Gladiador espartaco = new Thraex();
         espartaco.setEquipamiento(new Armadura());
         assertEquals(espartaco.getSalud(), 20);
@@ -79,7 +79,7 @@ public class GladiadorAtacadoTest {
     // int atacarATravesDeEquipamiento(EscudoYEspada escudoYEspada); a Afectable e implementar el daño que causa el
     // animal a traves de este equipo
     @Test
-    public void FieraSalvajeAtacaGladiadorConEscudoYEspada() {
+    public void FieraSalvajeAtacaGladiadorThaexConEscudoYEspada() {
 
         Gladiador espartaco = new Thraex();
         espartaco.setEquipamiento(new EscudoYEspada());
@@ -94,7 +94,7 @@ public class GladiadorAtacadoTest {
     }
 
     @Test
-    public void FieraMansaAtacaGladiadorConArmadura() {
+    public void FieraMansaAtacaGladiadorThaexConArmadura() {
 
         Gladiador espartaco = new Thraex();
         espartaco.setEquipamiento(new Armadura());
