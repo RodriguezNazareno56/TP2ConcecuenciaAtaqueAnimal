@@ -16,7 +16,7 @@ public class GladiadorAtacadoTest {
     public void FieraSalvajeAtacaGladiadorConCasco() {
 
         Gladiador espartaco = new Gladiador();
-        espartaco.setEquipo(new Casco());
+        espartaco.setEquipamiento(new Casco());
         assertEquals(espartaco.getSalud(), 20);
 
         // la concecuencia es una fiera y hago que afecte al gladiador
@@ -31,7 +31,7 @@ public class GladiadorAtacadoTest {
     public void FieraSalvajeAtacaGladiadorConArmadura() {
 
         Gladiador espartaco = new Gladiador();
-        espartaco.setEquipo(new Armadura());
+        espartaco.setEquipamiento(new Armadura());
         assertEquals(espartaco.getSalud(), 20);
 
         // la concecuencia es una fiera y hago que afecte al gladiador
@@ -47,7 +47,7 @@ public class GladiadorAtacadoTest {
     @Test
     public void TiburonAtacaGladiadorConArmadura() {
         Gladiador espartaco = new Gladiador();
-        espartaco.setEquipo(new Armadura());
+        espartaco.setEquipamiento(new Armadura());
         assertEquals(espartaco.getSalud(), 20);
 
         // la concecuencia es una fiera y hago que afecte al gladiador
@@ -65,7 +65,7 @@ public class GladiadorAtacadoTest {
     public void FieraSalvajeAtacaGladiadorConEscudoYEspada() {
 
         Gladiador espartaco = new Gladiador();
-        espartaco.setEquipo(new EscudoYEspada());
+        espartaco.setEquipamiento(new EscudoYEspada());
         assertEquals(espartaco.getSalud(), 20);
 
         // la concecuencia es una fiera y hago que afecte al gladiador
@@ -80,7 +80,7 @@ public class GladiadorAtacadoTest {
     public void FieraMansaAtacaGladiadorConArmadura() {
 
         Gladiador espartaco = new Gladiador();
-        espartaco.setEquipo(new Armadura());
+        espartaco.setEquipamiento(new Armadura());
         assertEquals(espartaco.getSalud(), 20);
 
         // la concecuencia es una fiera y hago que afecte al gladiador

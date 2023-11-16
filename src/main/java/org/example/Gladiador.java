@@ -5,7 +5,7 @@ import org.example.Equipamiento.Equipamiento;
 
 public class Gladiador {
 
-    private Equipamiento equipo;
+    private Equipamiento equipamiento;
     private int salud = 20;
 
     public void recibirAtaque(Animal animal) {
@@ -13,13 +13,13 @@ public class Gladiador {
     }
 
     private void defenderse(Animal animal) {
-        int danioRecibido = equipo.repelerAtaque(animal);
+        int danioRecibido = equipamiento.repelerAtaque(animal);
         salud = salud - danioRecibido;
     }
 
     // A finalidad del ejemplo, esto no iria asi
-    public void setEquipo(Equipamiento equipo) {
-        this.equipo = equipo;
+    public void setEquipamiento(Equipamiento equipamiento) {
+        this.equipamiento = equipamiento;
     }
 
     // A finalidad del ejemplo, esto no iria asi
