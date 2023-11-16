@@ -1,21 +1,18 @@
-package org.example;
+package org.example.Gladiadores;
 
 import org.example.ConcecuenciaDeCasilleros.Fieras.Animal;
 import org.example.Equipamiento.Equipamiento;
 
-public class Gladiador {
+public abstract class Gladiador {
 
-    private Equipamiento equipamiento;
-    private int salud = 20;
+    protected Equipamiento equipamiento;
+    protected int salud = 20;
 
     public void recibirAtaque(Animal animal) {
         this.defenderse(animal);
     }
 
-    private void defenderse(Animal animal) {
-        int danioRecibido = equipamiento.repelerAtaque(animal);
-        salud = salud - danioRecibido;
-    }
+    protected abstract void defenderse(Animal animal);
 
     // A finalidad del ejemplo, esto no iria asi
     public void setEquipamiento(Equipamiento equipamiento) {

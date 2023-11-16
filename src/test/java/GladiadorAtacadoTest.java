@@ -1,4 +1,3 @@
-import org.example.*;
 import org.example.ConcecuenciaDeCasilleros.Consecuencia;
 import org.example.ConcecuenciaDeCasilleros.Fieras.FieraMansa;
 import org.example.ConcecuenciaDeCasilleros.Fieras.FieraSalvaje;
@@ -6,6 +5,9 @@ import org.example.ConcecuenciaDeCasilleros.Fieras.Tiburon;
 import org.example.Equipamiento.Armadura;
 import org.example.Equipamiento.Casco;
 import org.example.Equipamiento.EscudoYEspada;
+import org.example.Gladiadores.Gladiador;
+import org.example.Gladiadores.Retiarius;
+import org.example.Gladiadores.Thraex;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,9 +15,9 @@ import static org.junit.jupiter.api.Assertions.*;
 public class GladiadorAtacadoTest {
 
     @Test
-    public void FieraSalvajeAtacaGladiadorConCasco() {
+    public void FieraSalvajeAtacaGladiadorThaexConCasco() {
 
-        Gladiador espartaco = new Gladiador();
+        Gladiador espartaco = new Thraex();
         espartaco.setEquipamiento(new Casco());
         assertEquals(espartaco.getSalud(), 20);
 
@@ -28,9 +30,24 @@ public class GladiadorAtacadoTest {
     }
 
     @Test
+    public void FieraSalvajeAtacaGladiadorRetiariusConCasco() {
+
+        Gladiador espartaco = new Retiarius();
+        espartaco.setEquipamiento(new Casco());
+        assertEquals(espartaco.getSalud(), 20);
+
+        // la concecuencia es una fiera y hago que afecte al gladiador
+        Consecuencia consecuencia = new FieraSalvaje();
+        consecuencia.afectarGladiador(espartaco);
+
+        // La fiera causa 15 de daño
+        assertEquals(espartaco.getSalud(), 19);
+    }
+
+    @Test
     public void FieraSalvajeAtacaGladiadorConArmadura() {
 
-        Gladiador espartaco = new Gladiador();
+        Gladiador espartaco = new Thraex();
         espartaco.setEquipamiento(new Armadura());
         assertEquals(espartaco.getSalud(), 20);
 
@@ -46,7 +63,7 @@ public class GladiadorAtacadoTest {
     // el tiburon y que extienda de Animal y afectable, setear cuanto causa frente a cada equipamiento
     @Test
     public void TiburonAtacaGladiadorConArmadura() {
-        Gladiador espartaco = new Gladiador();
+        Gladiador espartaco = new Thraex();
         espartaco.setEquipamiento(new Armadura());
         assertEquals(espartaco.getSalud(), 20);
 
@@ -64,7 +81,7 @@ public class GladiadorAtacadoTest {
     @Test
     public void FieraSalvajeAtacaGladiadorConEscudoYEspada() {
 
-        Gladiador espartaco = new Gladiador();
+        Gladiador espartaco = new Thraex();
         espartaco.setEquipamiento(new EscudoYEspada());
         assertEquals(espartaco.getSalud(), 20);
 
@@ -79,7 +96,7 @@ public class GladiadorAtacadoTest {
     @Test
     public void FieraMansaAtacaGladiadorConArmadura() {
 
-        Gladiador espartaco = new Gladiador();
+        Gladiador espartaco = new Thraex();
         espartaco.setEquipamiento(new Armadura());
         assertEquals(espartaco.getSalud(), 20);
 

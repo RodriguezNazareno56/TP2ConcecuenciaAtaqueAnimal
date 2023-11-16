@@ -1,7 +1,7 @@
 package org.example.ConcecuenciaDeCasilleros.Fieras;
 
 import org.example.ConcecuenciaDeCasilleros.Consecuencia;
-import org.example.Gladiador;
+import org.example.Gladiadores.Gladiador;
 
 public abstract class Animal extends Consecuencia implements Afectable {
 

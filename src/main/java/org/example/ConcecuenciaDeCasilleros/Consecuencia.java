@@ -1,6 +1,6 @@
 package org.example.ConcecuenciaDeCasilleros;
 
-import org.example.Gladiador;
+import org.example.Gladiadores.Gladiador;
 
 public abstract class Consecuencia {
 
