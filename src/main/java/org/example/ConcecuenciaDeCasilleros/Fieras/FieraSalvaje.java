@@ -1,23 +1,11 @@
 package org.example.ConcecuenciaDeCasilleros.Fieras;
 
-import org.example.Equipamiento.Armadura;
-import org.example.Equipamiento.Casco;
-import org.example.Equipamiento.EscudoYEspada;
+import org.example.Equipamiento.Equipamiento;
 
 public class FieraSalvaje extends Animal {
 
     @Override
-    public int atacarATravesDeEquipamiento(Casco equipamiento) {
-        return 15;
-    }
-
-    @Override
-    public int atacarATravesDeEquipamiento(Armadura armadura) {
-        return 10;
-    }
-
-    @Override
-    public int atacarATravesDeEquipamiento(EscudoYEspada escudoYEspada) {
-        return 2;
+    public int atacarATravesDeEquipamiento(Equipamiento equipamiento) {
+        return equipamiento.mitigarAtaque(this);
     }
 }
