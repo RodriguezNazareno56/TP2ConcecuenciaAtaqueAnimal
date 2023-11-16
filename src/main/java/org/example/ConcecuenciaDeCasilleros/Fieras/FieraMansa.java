@@ -1,11 +1,10 @@
 package org.example.ConcecuenciaDeCasilleros.Fieras;
 
-import org.example.ConcecuenciaDeCasilleros.Concecuencia;
 import org.example.Equipamiento.Armadura;
 import org.example.Equipamiento.Casco;
 import org.example.Equipamiento.EscudoYEspada;
 
-public class FieraMansa extends Animal implements Concecuencia {
+public class FieraMansa extends Animal {
 
     @Override
     public int atacarATravesDeEquipamiento(Casco equipamiento) {
