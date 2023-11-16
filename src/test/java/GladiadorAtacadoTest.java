@@ -1,5 +1,5 @@
 import org.example.*;
-import org.example.ConcecuenciaDeCasilleros.Concecuencia;
+import org.example.ConcecuenciaDeCasilleros.Consecuencia;
 import org.example.ConcecuenciaDeCasilleros.Fieras.FieraMansa;
 import org.example.ConcecuenciaDeCasilleros.Fieras.FieraSalvaje;
 import org.example.ConcecuenciaDeCasilleros.Fieras.Tiburon;
@@ -20,8 +20,8 @@ public class GladiadorAtacadoTest {
         assertEquals(espartaco.getSalud(), 20);
 
         // la concecuencia es una fiera y hago que afecte al gladiador
-        Concecuencia concecuencia = new FieraSalvaje();
-        concecuencia.afectarGladiador(espartaco);
+        Consecuencia consecuencia = new FieraSalvaje();
+        consecuencia.afectarGladiador(espartaco);
 
         // La fiera causa 15 de daño
         assertEquals(espartaco.getSalud(), 5);
@@ -35,8 +35,8 @@ public class GladiadorAtacadoTest {
         assertEquals(espartaco.getSalud(), 20);
 
         // la concecuencia es una fiera y hago que afecte al gladiador
-        Concecuencia concecuencia = new FieraSalvaje();
-        concecuencia.afectarGladiador(espartaco);
+        Consecuencia consecuencia = new FieraSalvaje();
+        consecuencia.afectarGladiador(espartaco);
 
         // La fiera causa 10 de daño
         assertEquals(espartaco.getSalud(), 10);
@@ -51,8 +51,8 @@ public class GladiadorAtacadoTest {
         assertEquals(espartaco.getSalud(), 20);
 
         // la concecuencia es una fiera y hago que afecte al gladiador
-        Concecuencia concecuencia = new Tiburon();
-        concecuencia.afectarGladiador(espartaco);
+        Consecuencia consecuencia = new Tiburon();
+        consecuencia.afectarGladiador(espartaco);
 
         // El tiburon causa 4 de daño
         assertEquals(espartaco.getSalud(), 16);
@@ -69,8 +69,8 @@ public class GladiadorAtacadoTest {
         assertEquals(espartaco.getSalud(), 20);
 
         // la concecuencia es una fiera y hago que afecte al gladiador
-        Concecuencia concecuencia = new FieraSalvaje();
-        concecuencia.afectarGladiador(espartaco);
+        Consecuencia consecuencia = new FieraSalvaje();
+        consecuencia.afectarGladiador(espartaco);
 
         // La fiera causa 2 de daño
         assertEquals(espartaco.getSalud(), 18);
@@ -84,8 +84,8 @@ public class GladiadorAtacadoTest {
         assertEquals(espartaco.getSalud(), 20);
 
         // la concecuencia es una fiera y hago que afecte al gladiador
-        Concecuencia concecuencia = new FieraMansa();
-        concecuencia.afectarGladiador(espartaco);
+        Consecuencia consecuencia = new FieraMansa();
+        consecuencia.afectarGladiador(espartaco);
 
         // La fiera causa 10 de daño
         assertEquals(espartaco.getSalud(), 20);
