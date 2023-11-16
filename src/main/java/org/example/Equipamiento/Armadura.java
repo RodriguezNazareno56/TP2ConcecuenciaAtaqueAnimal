@@ -7,11 +7,11 @@ public class Armadura extends Equipamiento{
 
     @Override
     public int mitigarAtaque(FieraSalvaje fieraSalvaje) {
-        return 10;
+        return fieraSalvaje.atacarArmadura();
     }
 
     @Override
     public int mitigarAtaque(FieraMansa fieraMansa) {
-        return 0;
+        return fieraMansa.atacarArmadura();
     }
 }

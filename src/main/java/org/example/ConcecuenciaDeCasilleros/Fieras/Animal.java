@@ -11,5 +11,9 @@ public abstract class Animal extends Consecuencia {
         gladiador.recibirAtaque(this);
     }
 
-    public abstract int atacarATravesDeEquipamiento(Equipamiento equipamiento);
+    public abstract int atacarATravesDelEquipamiento(Equipamiento equipamiento);
+
+    public abstract int atacarCasco();
+    public abstract int atacarArmadura();
+    public abstract int atacarEscudoYEspada();
 }

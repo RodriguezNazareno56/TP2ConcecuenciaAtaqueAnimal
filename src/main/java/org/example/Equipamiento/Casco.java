@@ -7,11 +7,11 @@ public class Casco extends Equipamiento{
 
     @Override
     public int mitigarAtaque(FieraSalvaje fieraSalvaje) {
-        return 15;
+        return fieraSalvaje.atacarCasco();
     }
 
     @Override
     public int mitigarAtaque(FieraMansa fieraMansa) {
-        return 1;
+        return fieraMansa.atacarCasco();
     }
 }

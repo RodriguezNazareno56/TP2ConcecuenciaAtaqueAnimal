@@ -13,7 +13,7 @@ public class Gladiador {
     }
 
     private void defenderse(Animal animal) {
-        int danioRecibido = animal.atacarATravesDeEquipamiento(equipamiento);
+        int danioRecibido = animal.atacarATravesDelEquipamiento(equipamiento);
         salud = salud - danioRecibido;
     }
 
