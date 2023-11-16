@@ -17,6 +17,10 @@ public class Gladiador {
         salud = salud - danioRecibido;
     }
 
+    public void incrementarEquipamiento() {
+        equipamiento = equipamiento.incrementar();
+    }
+
     // A finalidad del ejemplo, esto no iria asi
     public void setEquipamiento(Equipamiento equipamiento) {
         this.equipamiento = equipamiento;

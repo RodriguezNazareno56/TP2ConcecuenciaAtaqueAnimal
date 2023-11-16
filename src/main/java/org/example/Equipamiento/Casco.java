@@ -14,4 +14,9 @@ public class Casco extends Equipamiento{
     public int mitigarAtaque(FieraMansa fieraMansa) {
         return fieraMansa.atacarCasco();
     }
+
+    @Override
+    public Equipamiento incrementar() {
+        return new Armadura();
+    }
 }
